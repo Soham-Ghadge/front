@@ -1,0 +1,46 @@
+/* CryptoDetailsPage.css */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.CryptoDetailsPage-container {
+  color: rgb(241, 242, 235);
+  padding: 20px;
+  border-radius: 10px;
+  width: fit-content;
+  margin: 20px;
+  text-align: center;
+  background-color: #023E8A;
+}
+
+.CryptoDetailsPage-container h1 {
+  font-size: 50px;
+  font-family:'Times New Roman', Times, serif
+
+}
+
+.crypto-info-item {
+  margin-bottom: 10px;
+}
+
+.crypto-info-item label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.crypto-info {
+  /* Your styling for the <p> tag */
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.ptag {
+  color: tomato;
+  font-size: 20px;
+  font-family: monospace;
+}
+
+.ptags {
+  color: chartreuse;
+  font-size: 20px;
+  font-family: monospace;
+}
+

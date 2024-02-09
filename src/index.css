@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Montserrat:wght@300;400;800&family=Roboto:ital,wght@1,300;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .wrapper-container{
+        @apply max-w-5xl mx-auto px-2
+    }
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url(/Bg.png);
+  background-size: cover;
+  background-position: center;
+  font-family: "Quicksand", sans-serif;
+}
+
+nav {
+  background-size: cover;
+  background-color: #03045e;
+  box-shadow: 3px 3px 5px white;
+}
+
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav li {
+  height: 50px;
+}
+
+nav a {
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  color: white;
+}
+
+nav a:hover {
+  background-color: #0096c7;
+}
+
+/* 
+for cards */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  justify-content: space-evenly;
+}
+
+.card {
+  width: 290px;
+  height: 354px;
+  background: #03045e;
+  border-radius: 15px;
+  box-shadow: 1px 5px 60px 0px #03045e;
+  margin-top: 40px;
+  margin-left: 20px;
+  display: inline-block;
+  flex-wrap: wrap;
+
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #0096c7;
+  justify-content: space-evenly; /* or space-between depending on your preference */
+  padding: 20px; /* Adjust as needed */
+}
+
+.card .card-border-top {
+  width: 60%;
+  height: 3%;
+  background: #0077b6;
+  margin: auto;
+  border-radius: 0px 0px 15px 15px;
+}
+
+.card span {
+  font-weight: 600;
+  color: black;
+  text-align: center;
+  display: block;
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+.card-space{
+  display:ruby
+
+}
+.card .job {
+  font-weight: bold;
+  color: black;
+  display: block;
+  text-align: center;
+  padding-top: 3px;
+  font-size: 16px;
+}
+
+.card .img {
+  width: 115px;
+  height: 115px;
+  background: #0077b6;
+  border-radius: 15px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.card button {
+  padding: 8px 25px;
+  display: block;
+  margin: auto;
+  border-radius: 8px;
+  border: none;
+  margin-top: 30px;
+  background: #0077b6;
+  color: white;
+  font-weight: 600;
+}
+.button {
+  font-size: 12px;
+}
+.card button:hover {
+  background: #CAF0F8;
+}
+
+.img {
+  text-align: center;
+}
+
+.img img {
+  display: inline;
+  padding-top: 20%;
+}
+
+.hover-glow {
+  background-color: #00B4D8;
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.hover-glow:hover {
+  box-shadow: 0 0 20px whitesmoke; /* Adjust the color and size as needed */
+}
+
+/* about page */
+.about1 {
+  padding-top: 3vh;
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.about2 {
+  font-size: larger;
+  padding-top: 3vh;
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.portfolio {
+  position: relative;
+
+  font-size: 1.5em;
+
+  background: linear-gradient(21deg, #10abff, #1beabd);
+
+  padding: 3px;
+
+  display: inline-block;
+
+  border-radius: 9999em;
+
+  *:not(span) {
+    position: relative;
+    display: inherit;
+    border-radius: inherit;
+    margin: 0;
+    border: none;
+    outline: none;
+    padding: 0 0.325em;
+    z-index: 1;
+    &:focus + span {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  span {
+    transform: scale(0.993, 0.94);
+    transition: transform 0.5s, opacity 0.25s;
+    opacity: 0;
+    position: absolute;
+    z-index: 0;
+    margin: 4px;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit;
+    pointer-events: none;
+
+    box-shadow: inset 0 0 0 3px #fff, 0 0 0 4px #fff, 3px -3px 30px #1beabd,
+      -3px 3px 30px #10abff;
+  }
+}
+
+.portfolio {
+  text-align: center;
+  font-family: inherit;
+  line-height: inherit;
+  color: #2e3750;
+  min-width: 12em;
+}
+
+.portfolio2 .span {
+  transform: scale(0.993, 0.94);
+  transition: transform 0.5s, opacity 0.25s;
+  opacity: 0;
+  position: absolute;
+  z-index: 0;
+  margin: 4px;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+/* .portfolio2 {
+  position: relative;
+
+  background: linear-gradient(21deg, #1e87c0, #2ad8b3);
+
+  padding: 3px;
+
+  display: inline-block;
+
+  color: #000105;
+  border-radius: 9999em;
+
+  *:not(span) {
+    position: relative;
+    display: inherit;
+    border-radius: inherit;
+    margin: 0;
+    border: none;
+    outline: none;
+    padding: 0 0.325em;
+    z-index: 1;
+    &:focus + span {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+} */
+.intro {
+  font-family: 'Bebas Neue', sans-serif;
+
+  
+}
+/* src/index.css */
+@font-face {
+  font-family: 'Bebas Neue';
+  src: local('Bebas Neue'), url('./fonts/BebasNeue-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+

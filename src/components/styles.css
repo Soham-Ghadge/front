@@ -1,0 +1,11 @@
+/* Styling Twitter Container */
+.twitter-container {
+    float: right; /* Aligns the container to the right */
+    width: 300px; /* Adjust the width as needed */
+    margin-left: 20px; /* Adds some space between the Twitter widget and other content */
+}
+
+/* Styling Twitter Timeline Widget */
+.twitter-timeline {
+    margin-bottom: 20px; /* Adds some space between individual Twitter widgets */
+}
